@@ -1,0 +1,449 @@
+/*CSS RESET*/ 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*FONTS*/
+
+
+/*CSS VARIABLES*/
+
+:root{
+    --black:#0D0D0D;
+    --white:#F2F2F2;
+    --teal:#7ABFBF;
+    --light-teal:rgba(122, 191, 191, .5);
+    --red:#EB5428;
+}
+/*MAIN STYLES*/
+h1, h2, h3, h4, nav a, nav span, menu li, footer{
+    font-family:"Bebas Neue";
+}
+h1{
+    font-size:40px;
+}
+h2{
+    font-size:30px;
+}
+h3{
+    font-size:25px;
+}
+nav a, menu li, #social li, footer{
+    font-size:20px;
+}
+p, li , nav , input{
+    font-family:"Montserrat";
+    line-height:1.5;
+}
+nav{
+    width:100%;
+    font-family:"Bebas Neue";
+    text-transform: uppercase;
+    
+}
+nav menu{
+    display:none;
+    color:var(--red);
+}
+nav .main-menu{
+    
+    display:flex;
+    background-color:var(--white);
+    justify-content: center;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index: 2;
+    font-family:"Bebas Neue";
+}
+nav .main-menu p{
+    font-family:"Bebas Neue";
+    
+}
+nav .logo{
+    background-color:var(--red);
+    width:50%;
+    padding:10px 0;
+}
+nav .logo svg{
+    display:block;
+    margin:0 auto;
+}
+nav .hamburger, nav .sign-in{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:25%;
+    
+}
+header{
+    text-align:center;
+    font-family:"Bebas Neue";
+}
+.search-button{
+    background-color:var(--red);
+    border:none;
+    width: 37px;
+}
+.search-button svg{
+    width:25px;
+    height:25px;
+}
+.search{
+    height:35px;
+    border: solid 2px var(--red);
+    width: 243px;
+}
+.search-container{
+    position:absolute;
+    top: 117px;
+    display: flex;
+    margin: 0 auto;
+    width: 280px;
+    left: 0;
+    right: 0;
+    z-index:1;
+}
+article{
+margin-top:200px;
+}
+article menu{
+    display:flex;
+    list-style-type:none;
+    width:100%;
+    justify-content:space-around;
+    margin:12px 0;
+    color:var(--red);
+}
+article menu li a{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    align-items:center;
+    font-family:"Bebas Neue";
+}
+article .food{
+    width:100%;
+}
+.side-dishes{
+    background-color:var(--teal);
+}
+.side-dishes h3{
+    text-align:center;
+    margin-bottom:30px;
+    padding-top:10px;
+}
+.side-dish-card{
+    margin:20px;
+    display:flex;
+    flex-direction:column;
+}
+.side-dish-card img{
+    order:-3;
+    width:100px;
+    height:100px;
+    margin-bottom:10px;
+}
+footer .copyright{
+    display:flex;
+    flex-direction:column;
+}
+footer .copyright h4{
+    text-align:center;
+    order:2;
+}
+footer .copyright img{
+    order:1;
+    display:block;
+    width:180px;
+    height:180px;
+    margin:0 auto;
+    margin-bottom:15px;
+}
+.paraone{
+    margin:20px 10px;
+}
+.paratwo{
+    margin:20px 10px;
+}
+.detail{
+    margin:25px 10px;
+}
+.detail ul li{
+    display:flex;
+}
+.detail ul li p:nth-child(1){
+    margin:0 10px;
+    font-weight:bold;
+}
+.detail h3{
+    text-align:center;
+}
+.textheavy{
+    font-weight:bold;
+}
+.ingredient ul{
+    list-style-type:disc;
+    margin-left:20px;
+    padding-left:20px;
+}
+.ingredient{
+    margin:25px 0px;
+}
+.ingredient h3{
+    text-align:center;
+}
+.instruction{
+    list-style-type:decimal;
+    margin-left:20px;
+    padding-left:20px;
+}
+.instruction ol li{
+    margin:20px 0;
+}
+#social{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    color:var(--red);
+}
+#social li p{
+    order:2;
+    font-family:"Bebas Neue";
+}
+#social li svg{
+    order:1;
+}
+#social li{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+}
+@media screen and (min-width:836px){
+    nav menu{
+        margin-top:100px;
+        list-style-type:none;
+        display:flex;
+        width:100%;
+    }
+    nav menu img{
+        width:50px;
+        height:50px;
+    }
+    nav .hamburger{
+        display:none;
+    }
+    nav .logo{
+        width:80px;
+        height:50px;
+    }
+    .search-container{
+        position:fixed;
+        top:0;
+        z-index:4;
+        margin-top:25px;
+        margin-right:305px;
+    }
+  nav .sign-in{
+    display:flex;
+    justify-content:right;
+        width:80px;
+        margin-top:0;
+    }
+    nav menu li{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        width:100%;
+    }
+    nav menu li p{ 
+        
+        order:2;
+    }
+    nav menu li img{ 
+        order:1;
+    }
+    article menu{
+        margin-top:0;
+        padding:10px 0;
+        position:absolute;
+        background-color: rgba(255,255,255, 0.3);
+    }
+    header{
+        margin: auto 0;
+    }
+    .detail{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        text-align:center;
+    }
+    .detail h3{
+        margin:20px 0;
+    }
+    .mediumflex{
+        display:flex;
+    }
+    .instruction{
+        margin:0;
+    }
+    .instruction ol li{
+        margin:0 50px 30px 50px;
+    }
+    .ingredient{
+        margin:0;
+    }
+    .ingredient h3{
+        margin-bottom:15px;
+    }
+    .instruction h3{
+        margin-bottom:15px;
+        text-align:center;
+    }
+footer {
+    display:flex;
+}
+footer .wholesocial{
+    order:2;
+    margin:25px;;
+    width:100%;
+}
+footer .copyright{
+    order:1;
+    margin:50px;
+}
+.dish-cards{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    width:50%;
+    justify-content:center;
+    margin:0 auto;
+}
+}
+@media screen and (min-width:1200px){
+    nav menu{
+        margin:0 55px;
+        list-style-type:none;
+        display:flex;
+        width:75%;
+    }
+    .main-menu .logo{
+        height:80px;
+        width:90px;
+        margin:0;
+    }
+    .search-container{
+        position:absolute;
+        top:0;
+        z-index:1;
+        margin-top:160px;
+        margin-right:490px;
+    }
+    article .main-info{
+        display:flex;
+    }
+    .main-info menu{
+        position:relative;
+        display:flex;
+        flex-direction:column;
+        width:500px;
+        height:480px;
+        border: 2px solid #EB5428;
+    }
+    .food{
+        height:500px;
+    }
+    .paragroup{
+        display:block;
+    }
+    header h2{
+        margin: 25px 0;
+    }
+    .detail{
+        background-color:var(--black);
+        color:var(--teal);
+        padding:10px 0;
+        margin:0;
+    }
+    .detail ul{
+        margin:0;
+        display:flex;
+    }
+    .detail ul li{
+        display:flex;
+        flex-direction:column;
+        margin:0 70px;
+    }
+    .detail h3{
+        margin-bottom:5px;
+    }
+    .mediumflex{
+        margin:50px 0;
+    }
+    footer .copyright{
+        display:flex;
+        flex-direction:row;
+    }
+    footer .copyright h4{
+        text-align:left;
+        width:150px;
+    }
+    .dish-cards{
+        display:flex;
+    }
+    .side-dish-card img{
+        width:250px;
+        height:250px;
+    }
+}
+.hide-this{
+    display:none;
+}
